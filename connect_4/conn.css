@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.board {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 10px; /* Add padding to control the size of the circles */
+    position: relative; /* Add relative positioning */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.board .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue; /* Fill the background with blue */
+}
+
+
+.board .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board .row .cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%; /* Make the cells circles */
+    display: inline-block; /* Ensure circular shape */ /* Add margin for spacing */
+    box-sizing: border-box; /* Include border in width and height */
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('back.jpeg');
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+h1 {
+    color: white;
+}
+
+.reset-btn {
+    margin-top: 20px;
+}
